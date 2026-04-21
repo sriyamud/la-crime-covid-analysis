@@ -1,0 +1,18 @@
+Date RPTD and OCC are objects
+Time Occ is int64
+
+victim fields are not always reported ~860k
+Cross Street reporting is low
+Weapon Used is low (this makes sense, not all crimes involve a weapon)
+
+premis_cd, premis_desc and weapon_used, weapon desc and status, status desc and area, area_name. Are redundant. Probably easiest to use the codes for the analysis
+
+The duplicates are true duplicates and should be removed. (There are only 5,431 duplicates /2 ==  2,978) There does not seem to be a reason for the duplicates
+
+There are 133 instances where victim age is less than 0. This must be an error. These results should not be considered when averaging crime by age
+
+In vict_sex, there are 114 H and 1 '-'. Both are invalid according to the documentation. Should we drop?
+
+The lat and lon fields are only accurate to two decimal places... or ~ 1 kilometer. Not very suitable for location correlation
+
+Do the most crimes happen at noon? or is that the default value?
