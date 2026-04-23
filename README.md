@@ -1,6 +1,7 @@
 # Exploratory Analysis on Crime Records in Los Angeles
 
-**UC Berkeley MIDS — DATASCI 200 Project 2**
+**UC Berkeley MIDS — DATASCI 200 Project 2**  
+Anne Hsu · Tom Leffler · Sai Sriya Mudigonda
 
 ---
 
